@@ -53,16 +53,13 @@ public class VeiculoService {
 	}
 	
 	public void deleteById(Long id) {
-		this.findById(id);
-		
+		this.findById(id);		
 		this.veiculoRepository.deleteById(id);
 	}
 	
 	
-	public List<Veiculo> findByCor(String cor) {
-		
-		return this.veiculoRepository.findAllByCor(cor);
-		
+	public List<Veiculo> findByCor(String cor) {		
+		return this.veiculoRepository.findAllByCor(cor);		
 	}
 	
 	
